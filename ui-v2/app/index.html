@@ -38,7 +38,7 @@
     </script>
     <script src="{{rootURL}}assets/consul-ui.js"></script>
     <script>
-      CodeMirror.modeURL = "{{rootURL}}assets/codemirror/mode/%N/%N.js";
+      CodeMirror.modeURL = ("{{rootURL}}assets/codemirror/mode/javascript/javascript.js").replace('javascript', '%N');
     </script>
     {{content-for "body-footer"}}
   </body>
