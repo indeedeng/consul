@@ -3,6 +3,7 @@ import { get, set } from '@ember/object';
 import qsaFactory from 'consul-ui/utils/qsa-factory';
 const $$ = qsaFactory();
 export default Component.extend({
+  classNames: ['code-editor'],
   onchange: function(value) {
     set(this, 'mode', value);
     this.setMode(value);
